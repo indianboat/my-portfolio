@@ -1,17 +1,27 @@
+"use client";
+import Header from "./components/Header";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "My Portfolio | PANKAJ",
-  description: "Made by Pankaj",
-};
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600"],
+});
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>My Portfolio | Pankaj</title>
+      </head>
+      <body className={`${poppins.className}`}>
+      <Header />
+        {children}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js" async></script>
+      </body>
     </html>
   );
 }
