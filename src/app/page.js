@@ -37,7 +37,7 @@ export default function Home() {
           <SectionProjects/>
         </section>
 
-        <section className="rounded-3xl container mx-auto md:w-10/12 sm:w-11/12 w-full p-4 flex gap-x-8 my-8">
+        <section className="rounded-3xl container mx-auto md:w-10/12 sm:w-11/12 w-full p-4 flex gap-x-8 my-8" id="contact">
           <SectionContact/>
         </section>
       </div>

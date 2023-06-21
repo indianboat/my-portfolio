@@ -1,4 +1,6 @@
 "use client";
+
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
 import { Poppins } from "next/font/google";
@@ -19,6 +21,7 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.className}`}>
       <Header />
         {children}
+      <Footer/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" async></script>
         <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js" async></script>
       </body>

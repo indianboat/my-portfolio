@@ -29,7 +29,7 @@ const Header = () => {
             <div className="md:flex sm:flex justify-center hidden">
               <ul className="flex justify-center items-center">
                 <li className="flex">
-                  <Link href={"mailto:iampankaj852@gmail.com"} className="px-2 py-1 rounded-full border border-[#aeafe9] text-center w-24">Hire !</Link>
+                  <Link href={"/#contact"} className="px-2 py-1 rounded-full border border-[#aeafe9] text-center w-24">Contact</Link>
                 </li>
               </ul>
             </div>
